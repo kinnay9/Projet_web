@@ -52,3 +52,141 @@ li a:hover:not(.active) {
     padding-left: 50px;
     flex: 1;
 }
+@media screen and (max-device-width: 800px)
+{
+    /*Pour les mobiles*/
+    html
+    {
+        background-image: none;
+        background-color:#555;
+    }
+
+    body
+    {
+        width:auto;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-top: 0px;
+        margin-right: 0px;
+    }
+
+    nav
+    {
+        width: 75%;
+        margin: auto;
+    }
+
+    #main
+    {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .texte
+    {
+        padding: 0;
+        font-size: 16px;
+    }
+
+    li a
+    {
+        padding: 5% 10%;
+        text-align: center;
+        font-size: 55px;
+    }
+
+    form #coordonnees
+    {
+        /* On enleve le cadre du fieldset, et on aligne les input */
+        width: 63%;
+        text-align: right;
+        border: none;
+    }
+    form #radio
+    {
+        /* On enleve le cadre du fieldset */
+        border:none;
+        text-align: center;
+    }
+
+    form #suggestion
+    {
+        /* On enleve le cadre du fieldset */
+        border:none;
+        text-align: center;
+    }
+
+    form p {
+        font-size: 30px;
+    }
+    
+    button {
+        width: 250px;
+        height: 100px;
+    }
+    
+    textarea {
+        width: 500px;
+        height: 300px;
+    }
+    
+    footer p
+    {
+        font-size: 25px;
+    }
+    table {
+        /* On créer une table pour que les images aient toutes la même largeure et soient centrées */
+        width: 100%;
+        border-spacing: 20px;
+    }
+
+    table tr th img {
+        /* L'image prend la largeure de la case */
+        height:60%;
+    }
+    
+}
+
+@media screen and (max-width: 800px)
+{
+    /* Lorsqu'on reduit la fenetre du navigateur*/
+    html
+    {
+        margin:0;
+        padding:0;
+        background-color:#555;
+    }
+
+    body
+    {
+        width:75%;
+        padding-right: 0px;
+        margin-top: 0px;
+        margin-right: 0px;
+    }
+
+    #main
+    {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .texte
+    {
+        padding: 0;
+        font-size: 20px;
+    }
+
+    li a
+    {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    footer p
+    {
+        font-size: 20px;
+    }
+}
